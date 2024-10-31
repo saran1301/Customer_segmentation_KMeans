@@ -1,16 +1,6 @@
 # Customer_segmentation_KMeans
 This project demonstrates the power of KMeans clustering in identifying distinct customer segments within an online retail environment. The insights derived from the clustering analysis can help businesses tailor their marketing strategies, improve customer retention, and enhance overall customer experience.
-
-File Structure :
-src/
-│
-├── Notebooks/
-│   └── YourNotebook.ipynb
-|
-├── Visualisations/
-   ├── image1.png            
-   ├── image2.png
-   └── image3.png          
+Go through the Notebook in src folder to understand in depth about the project.
 
 ---
 
