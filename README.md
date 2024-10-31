@@ -1,6 +1,16 @@
 # Customer_segmentation_KMeans
 This project demonstrates the power of KMeans clustering in identifying distinct customer segments within an online retail environment. The insights derived from the clustering analysis can help businesses tailor their marketing strategies, improve customer retention, and enhance overall customer experience.
-Here's a structured README file for your project, designed to be engaging and visually appealing for recruiters. You can add visualizations where indicated.
+
+File Structure :
+src/
+│
+├── Notebooks/
+│   └── YourNotebook.ipynb
+|
+├── Visualisations/
+   ├── image1.png            
+   ├── image2.png
+   └── image3.png          
 
 ---
 
@@ -36,9 +46,6 @@ df.info()
 - The dataset contains several anomalies, including missing `Customer ID`s and negative quantities.
 - Stock codes have inconsistent formats, necessitating a cleaning step.
 
-### Visualization Space 1
-*Insert visualization showing data distribution or anomalies here*
-
 ## Data Cleaning
 The data cleaning process involves:
 1. Removing records with missing `Customer ID`.
@@ -47,8 +54,6 @@ The data cleaning process involves:
 
 After cleaning, we retained approximately **77%** of the original records, setting the stage for further analysis.
 
-### Visualization Space 2
-*Insert before-and-after comparison of records filtered here*
 
 ## Feature Engineering
 We engineered three key features for clustering:
@@ -58,16 +63,14 @@ We engineered three key features for clustering:
 
 The aggregated data structure allows for a meaningful analysis of customer segments.
 
-### Visualization Space 3
-*Insert histograms/boxplots of Monetary Value, Frequency, and Recency distributions here*
+![image](https://github.com/saran1301/Customer_segmentation_KMeans/blob/c39d0d4a720bd6841fddee10cc5140b1b2038d8b/src/Visualizations/Histograms.png)
 
 ## KMeans Clustering
 We utilized the KMeans clustering algorithm to categorize customers based on the engineered features. Key steps included:
 - Standardizing the feature set to ensure each feature contributes equally.
 - Determining the optimal number of clusters through the elbow method and silhouette scores.
 
-### Visualization Space 4
-*Insert elbow method and silhouette score plots here*
+![image](https://github.com/saran1301/Customer_segmentation_KMeans/blob/c39d0d4a720bd6841fddee10cc5140b1b2038d8b/src/Visualizations/KMeans_Clustering.png)
 
 After testing various values of \( k \), we settled on **4 clusters** for analysis.
 
@@ -86,21 +89,18 @@ The final clusters are characterized as follows:
 4. **Cluster 3 (Reward)**: Very frequent and high-value customers. 
    - **Action**: Implement loyalty programs and rewards.
 
-### Visualization Space 5
-*Insert a 3D scatter plot showing customer distribution across clusters here*
+![image](https://github.com/saran1301/Customer_segmentation_KMeans/blob/c39d0d4a720bd6841fddee10cc5140b1b2038d8b/src/Visualizations/3D_ScatterPlot_3_Final.png)
 
 ## Visualizations
 We created various visualizations to summarize and present the findings effectively:
 
 1. **Violin Plots**: These plots illustrate the distribution of key features across clusters, highlighting differences in customer behavior.
    
-   ### Visualization Space 6
-   *Insert violin plots for Monetary Value, Frequency, and Recency by cluster here*
+   ![image](https://github.com/saran1301/Customer_segmentation_KMeans/blob/c39d0d4a720bd6841fddee10cc5140b1b2038d8b/src/Visualizations/Violin%20Plots.png)
 
 2. **Cluster Distribution Bar Chart**: This chart depicts the number of customers in each cluster, accompanied by the average feature values.
 
-   ### Visualization Space 7
-   *Insert cluster distribution bar chart here*
+   ![image](https://github.com/saran1301/Customer_segmentation_KMeans/blob/c39d0d4a720bd6841fddee10cc5140b1b2038d8b/src/Visualizations/Cluster%20Distribution.png)
 
 ## Conclusion
 This project demonstrates the power of KMeans clustering in identifying distinct customer segments within an online retail environment. The insights derived from the clustering analysis can help businesses tailor their marketing strategies, improve customer retention, and enhance overall customer experience.
